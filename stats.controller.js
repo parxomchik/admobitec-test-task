@@ -9,7 +9,7 @@
 
 
     statsController.$inject = ['$http', 'uiGridGroupingConstants','statsFactory'];
-    function statsController($http,uiGridGroupingConstants, statsFactory) {
+    function statsController(uiGridGroupingConstants, statsFactory) {
 
         var vm = this;
         var csv;
@@ -82,19 +82,8 @@
 
 
 
-
-        //// Тестовый json
-        //$http.get('data.json')
-        //    .success(function(data) {
-        //
-        //        //vm.gridOptions.data = data;
-        //    });
-
-
-
         statsFactory.getStats()
             .success(function(data){
-
 
                console.log('factoryData = '+angular.toJson(data));
 

@@ -1,0 +1,28 @@
+<!doctype html>
+<html ng-app="admobitec">
+  <head>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-touch.js"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular-animate.js"></script>
+    <script src="http://ui-grid.info/release/ui-grid.js"></script>
+    <link rel="stylesheet" href="http://ui-grid.info/release/ui-grid.css" type="text/css">
+    <link rel="stylesheet" href="main.css" type="text/css">
+  </head>
+  <body>
+
+<div ng-controller="statsController as stats">
+  <div id="grid1" ui-grid="stats.gridOptions" ui-grid-grouping  ui-grid-selection class="grid"></div>
+</div>
+
+
+    <script src="vendor/papaparse.min.js"></script>
+
+    <script src="index.module.js"></script>
+
+    <script src="stats.controller.js"></script>
+
+    <script src="stats.factory.js"></script>
+
+
+  </body>
+</html>

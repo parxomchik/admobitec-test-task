@@ -4,6 +4,6 @@ Framework Angualar Js
 
 Libs:
 
-Angular ui-grid;
+ - Angular ui-grid;
 
-Csv to json parser;
+ - Csv to json parser;

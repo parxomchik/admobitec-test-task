@@ -8,7 +8,7 @@
 
 
 
-    statsController.$inject = ['$http', 'uiGridGroupingConstants','statsFactory'];
+    statsController.$inject = ['uiGridGroupingConstants','statsFactory'];
     function statsController(uiGridGroupingConstants, statsFactory) {
 
         var vm = this;
@@ -80,12 +80,11 @@
             }
         };
 
-
-
         statsFactory.getStats()
             .success(function(data){
 
-               console.log('factoryData = '+angular.toJson(data));
+               //console.log('factoryData = '+angular.toJson(data));
+
 
                 csv = Papa.parse(data,{
                     header: true

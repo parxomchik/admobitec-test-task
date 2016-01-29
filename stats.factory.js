@@ -12,7 +12,8 @@
             getStats: function () {
                 return $http({
                     method: 'GET',
-                    url: 'stats.csv',
+                    //url: 'stats.csv',
+                    url: 'http://www.admobitec.com/send/stats.csv',
                     headers: {'Content-Type': 'application/x-www-form-urlencoded'}
                 })
             }
